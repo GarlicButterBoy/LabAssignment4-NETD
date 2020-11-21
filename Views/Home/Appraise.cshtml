@@ -4,60 +4,59 @@
 }
 
 <!DOCTYPE HTML>
-
 <html>
-
 <head>
-
-    <title>Something Fancy to Appraise For</title>
+    <title>Appraise Text</title>
     <link rel="stylesheet" href="~/css/site.css" type="text/css" />
-
 </head>
-
-
 <body>
+    <header>
+        <h2>Textbook Appraisal</h2>
+    </header>
 
-    <h1>Register </h1>
-
-    <ul>
-        <li><a href="~/Home/Index">Home</a></li>
-        <li><a class="active" href="~/Home/Appraise">Appraise</a></li>
-
-
-    </ul>
-
-    <div>
-        <form action="~/Home/Appraise" method="POST">
-
-
-            <label for="title">Textbook Title</label>
-            <input type="text" id="title" name="title" placeholder="Your Textbook Title">
-            <br />
-            <label for="isbn">Textbook ISBN</label>
-            <input type="text" id="isbn" name="isbn" placeholder="Your Textbook ISBN">
-            <br />
-            <label for="version">Textbook Version</label>
-            <input type="number" id="version" name="version" placeholder="Your Textbook Version Number">
-            <br />
-            <label for="price">Textbook Price</label>
-            <input type="number" id="price" name="price" placeholder="The Price You Paid For The Textbook">
-            <br />
-            <label for="condition">Textbook Condition</label>
-            <select name="condition" id="condition" placeholder="What Condition Is Your Textbook In?">
-                <option value="good">Good</option>
-                <option value="okay">Okay</option>
-                <option value="bad">Bad</option>
-            </select>
-            <br />
+    <section>
+        <nav>
+            <ul>
+                <li><a class="active" href="~/Home/Index">Home</a></li>
+                <li><a href="~/Home/Appraise">Appraise</a></li>
+            </ul>
+        </nav>
 
 
+        <h1>Textbook Appraisal</h1>
+        <article>
+            <div>
+                <form action="~/Home/Appraise" method="POST">
 
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+                    <label for="title">Textbook Title</label>
+                    <input type="text" id="title" name="title" placeholder="Your Textbook Title">
+                    <br />
+                    <label for="isbn">Textbook ISBN</label>
+                    <input type="text" id="isbn" name="isbn" placeholder="Your Textbook ISBN">
+                    <br />
+                    <label for="version">Textbook Version</label>
+                    <input type="text" id="version" name="version" placeholder="Your Textbook Version Number">
+                    <br />
+                    <label for="price">Textbook Price</label>
+                    <input type="text" id="price" name="price" placeholder="The Price You Paid For The Textbook">
+                    <br />
+                    <label for="condition">Textbook Condition</label>
+                    <select name="condition" id="condition" placeholder="What Condition Is Your Textbook In?">
+                        <option value="good">Good</option>
+                        <option value="okay">Okay</option>
+                        <option value="bad">Bad</option>
+                    </select>
+                    <br />
 
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
 </body>
-
-
 </html>
 
