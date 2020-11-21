@@ -5,4 +5,8 @@
     <RootNamespace>LabAssignment4_NETD</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>
