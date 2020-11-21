@@ -40,6 +40,24 @@ namespace LabAssignment4_NETD.Models
             return output;
         }
 
+        //Calculate Method
+        public double CalculateCost()
+        {
+            double appraisedPrice = 0;
 
+            if (this.condition == "Bad")
+            {
+                appraisedPrice = this.price / 4;
+            }
+            else if (this.condition == "Okay")
+            {
+                appraisedPrice = this.price / 3;
+            }
+            else
+            {
+                appraisedPrice = this.price / 2;
+            }
+            return Math.Round(appraisedPrice, 2);
+        }
     }
 }
