@@ -11,14 +11,32 @@
     <link rel="stylesheet" href="~/css/site.css" type="text/css" />
 </head>
 <body>
-    <h1>Appraised</h1>
-    <ul>
-        <li><a href="~/Home/Index">Home</a></li>
-        <li><a class="active" href="~/Home/Appraise">Appraise Again</a></li>
-    </ul>
+<header>
+    <h2>Textbook Appraisal</h2>
+</header>
 
-    <h3> @ViewData["Message"]</h3>
-    <h3> @ViewData["Appraisal"]</h3>
+<section>
+    <nav>
+        <ul>
+            <li><a class="active" href="~/Home/Index">Home</a></li>
+            <li><a href="~/Home/Appraise">Appraise</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Textbook Appraisal</h1>
+    <article>
+        <p>"========================================="</p>
+        <p>@ViewData["Message"]</p>
+        <p>"========================================="</p>
+        <p> @ViewData["Appraisal"]</p>
+        <p>"========================================="</p>
+    </article>
+</section>
+
+<footer>
+    <p>Footer</p>
+</footer>
 </body>
 </html>
 

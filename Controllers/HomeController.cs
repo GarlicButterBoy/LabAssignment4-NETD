@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace LabAssignment4_NETD.Controllers
 {
@@ -28,8 +29,8 @@ namespace LabAssignment4_NETD.Controllers
         {
             if (ModelState.IsValid)
             {
-                ViewData["Message"] = text.ToString();
-                ViewData["Appraisal"] = "We will pay $" + text.CalculateCost().ToString() + " for your Textbook " + text.title;
+                ViewData["Message"] = "Your Textbook: " + text.title + ", Version: " + text.version + " is in " + text.condition " condition.";
+                ViewData["Appraisal"] = "This means we will pay you $" + text.CalculateCost().ToString() + " for your Textbook";
 
                 return View("Appraised", text);
             }
