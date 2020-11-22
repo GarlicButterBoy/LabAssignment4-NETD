@@ -13,7 +13,6 @@
     <header>
         <h2>Textbook Appraisal</h2>
     </header>
-
     <section>
         <nav>
             <ul>
@@ -24,7 +23,8 @@
 
 
         <h1>Textbook Appraisal</h1>
-        <article>
+        <article class="center">
+            <h3>Textbook Information</h3>
             <div>
                 <form action="~/Home/Appraise" method="POST">
 
@@ -41,21 +41,20 @@
                     <input type="text" id="price" name="price" placeholder="The Price You Paid For The Textbook">
                     <br />
                     <label for="condition">Textbook Condition</label>
-                    <select name="condition" id="condition" placeholder="What Condition Is Your Textbook In?">
+                    <select name="condition" id="condition">
                         <option value="Good">Good</option>
                         <option value="Okay">Okay</option>
                         <option value="Bad">Bad</option>
                     </select>
-                    <br />
-
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" />
+                    <br /><br />
                 </form>
             </div>
         </article>
     </section>
 
     <footer>
-        <p>Footer</p>
+        <p>Students4CheapTextbooks</p>
     </footer>
 </body>
 </html>

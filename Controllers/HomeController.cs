@@ -29,7 +29,7 @@ namespace LabAssignment4_NETD.Controllers
         {
             if (ModelState.IsValid)
             {
-                ViewData["Message"] = "Your Textbook: " + text.title + ", Version: " + text.version + " is in " + text.condition " condition.";
+                ViewData["Message"] = "Your Textbook: " + text.title + ", Version: " + text.version + " is in " + text.condition + " condition.";
                 ViewData["Appraisal"] = "This means we will pay you $" + text.CalculateCost().ToString() + " for your Textbook";
 
                 return View("Appraised", text);

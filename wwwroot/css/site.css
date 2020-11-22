@@ -1,8 +1,7 @@
 ﻿/* MY CSS STYLES*/
 
-header
-{
-    background-color: lightblue;
+header {
+    background-color: #ccccff;
     padding: 5px;
     text-align: center;
     font-size: 30px;
@@ -24,18 +23,18 @@ nav
         padding: 0;
         list-style-type: none;
         margin: 0;
-        background-color: coral;
+        background-color: #ffddcc;
         height: 100%;
         border: 1px solid #555;
     }
 
-article
-{
+article {
+    opacity: 0.76;
+    position: relative;
     float: left;
     padding: 20px;
     width: 70%;
-    background-color: coral;
-    height: 300px; /* only for demonstration, should be removed */
+    background-color: #f2f2f2;
 }
 
 /* Clear floats after the columns */
@@ -47,9 +46,8 @@ section:after
 }
 
 /* Style the footer */
-footer
-{
-    background-color: lightblue;
+footer {
+    background-color: #ccccff;
     padding: 10px;
     text-align: center;
     color: black;
@@ -65,9 +63,9 @@ footer
     }
 }
 
-body
-{
-    background-color: cornflowerblue;
+body {
+    background-color: #e6e6ff;
+    padding: 10px;
 }
 
 li
