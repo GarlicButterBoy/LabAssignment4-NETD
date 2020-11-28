@@ -117,6 +117,16 @@ input[type=submit]:hover
         background-color: #45a049;
 }
 
+table, th, td
+{
+    border: 1px solid black;
+}
+
+thead
+{
+    height: 50px;
+}
+
 .center
 {
     text-align: center;

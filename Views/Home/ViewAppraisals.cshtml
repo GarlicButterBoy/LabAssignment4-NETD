@@ -1,0 +1,90 @@
+﻿@model IEnumerable<LabAssignment4_NETD.Models.Textbook>
+
+@{
+    ViewData["Title"] = "ViewAppraisals";
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/site.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h4>Active Appraisals</h4>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a class="active" href="~/Home/Index">Home</a></li>
+                <li><a href="~/Home/Appraise">Appraise</a></li>
+                <li><a href="~/Home/ViewAppraisals">View Appraisals</a></li>
+            </ul>
+        </nav>
+
+
+        <h1 class="center">Active Appraisals</h1>
+        <article>
+            <div class="center">
+                <h3>About</h3>
+
+
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.title)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.isbn)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.version)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.price)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.condition)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.title)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.isbn)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.version)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.price)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.condition)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>Students4CheapTextbooks</p>
+    </footer>
+</body>
+</html>

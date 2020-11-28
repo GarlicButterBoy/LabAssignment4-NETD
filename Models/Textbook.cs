@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,9 +8,15 @@ namespace LabAssignment4_NETD.Models
 {
     public class Textbook
     {
+        [Required(AllowEmptyStrings = false, ErrorMessage = "The Textbook Title CANNOT be Empty.")]
         public string title { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "The ISBN CANNOT be Empty.")]
         public string isbn { get; set; }
+        [Required]
+        [Range((double)1, 5, ErrorMessage = "Version Number must be between 1 and 5.")]
         public double version { get; set; }
+        [Required]
+        [Range((double)0, 500, ErrorMessage = "Textbook cost must be between 0 and 500.")]
         public double price { get; set; }
         public string condition { get; set; }
 
