@@ -13,7 +13,7 @@ namespace LabAssignment4_NETD.Controllers
     public class HomeController : Controller
     {
         //Global List to store objects
-        public List<Textbook> textbookList = new List<Textbook>();
+        public static List<Textbook> textbookList = new List<Textbook>();
 
         public IActionResult Index()
         {
